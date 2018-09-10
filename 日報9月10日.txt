@@ -1,0 +1,38 @@
+各位
+お疲れ様です。辻です。
+9/10の日報を提出いたします。
+
+◯本日の研修内容
+・フレームワークを使ったWebアプリ構築
+
+◯作業の進捗度
+遅延：なし
+期日：フレームワークを使ったWebアプリ構築は9月12日まで
+
+◯今日学んだ事(技術面)
+　◇springでのDB接続と実行
+　　　① pom.xmlに使うライブラリを追加
+　　　② applicationConfig.xmlにDB関連の設定追加
+　　　③ 接続用のjdbc.propertiesファイルを作成
+　　　④ ControllerクラスでSQL実行
+　　　  （ただ自分の環境で接続できないので原因を確認中）
+
+　◇Spring MVC
+　　　・MVCモデルをフレームワーク化したもの
+　　　・アノテーションが利用できるのでインターフェースを定義()する必要がない
+　　　・SpringMVCの動き
+	① DispacherServletがリクエストを受け取る
+　　　　② DispacherServletは、リクエストされたURLをHandlerMappingに渡して対象のControllerオブジェクトを選択、
+	　 （@RequestMappingアノテーションでマッピングした）URLに該当する処理を実行　　　
+　　　　③ その結果を基にビューに渡すオブジェクトをModelオブジェクトに格納する。
+　　　　　 最後にControllerオブジェクトは処理の結果に応じてView名を返す
+　　　　④ DispacherServletはControllerから返されたView名をViewResolver(.xml)に渡し、Viewオブジェクトを取得
+　　　　⑤ DispacherServletはViewオブジェクトに表示を依頼
+	⑥ Viewオブジェクトは対象のJSPに表示を依頼
+　　　　⑦ JSPが画面表示の処理をして、レスポンスを返す
+
+◯業務連絡
+特にありません。
+
+お忙しいところ恐れ入りますが
+ご確認のほど、よろしくお願いします。
